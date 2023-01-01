@@ -30,15 +30,15 @@ function [h,k,r]=fitCircle3Pt(x1, y1, x2, y2, x3, y3)
 
     c = (-x1^2) - y1^2 - 2 * g * x1 - 2 * f * y1;
 
-    # eqn of circle be x^2 + y^2 + 2*g*x + 2*f*y + c = 0
-    # where centre is (h = -g, k = -f) and
-    # radius r as r^2 = h^2 + k^2 - c
+%     # eqn of circle be x^2 + y^2 + 2*g*x + 2*f*y + c = 0
+%     # where centre is (h = -g, k = -f) and
+%     # radius r as r^2 = h^2 + k^2 - c
     h = -g;
     k = -f;
     sqr_of_r = h * h + k * k - c;
 
-    # r is the radius
+%     # r is the radius
     r = sqrt(sqr_of_r);
 
-##    print("Centre = (", h, ", ", k, ")");
-##    print("Radius = ", r);
+% ##    print("Centre = (", h, ", ", k, ")");
+% ##    print("Radius = ", r);

@@ -1,8 +1,10 @@
 cla
 centerx = 0;
 centery = 0;
-outerRad = 4;
+outerRad = 6;
 innerRad = outerRad*sqrt(2-sqrt(2));
+e = outerRad*(sqrt(2)-1);
+
 moveSize = (outerRad + e + e*cos(pi/4))*2;
 
 
